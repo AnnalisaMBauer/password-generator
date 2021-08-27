@@ -19,6 +19,6 @@ An image of my random password generator is shown below.
 
 ## Contact/Questions
 
-The password generator can be founds hosted at the following link...https://github.com/AMB718/password-generator
+The password generator can be founds hosted at the following link...https://amb718.github.io/password-generator/
 
 Please contact me at annalisa.bauer1@gmail.com with any questions. 

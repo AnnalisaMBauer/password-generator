@@ -1,14 +1,16 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Why do we have these strings here?
+// Why do we have these strings here? So we are able to store the data for the password generator will pull from.
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = lowercase.toUpperCase();
 var numeric = "0123456789";
 var special = "!@#$%^&*()_+";
 
+debugger;
+
 function getRandom(str) {
-  // What is going on here?
+  // What is going on here? This is a random number generator function that we created that the if statements go through to creat the password based on the users inputs.
   var randomIndex = Math.floor(Math.random() * str.length);
   // and here?
   return str[randomIndex];
@@ -16,8 +18,8 @@ function getRandom(str) {
 
 // Write password to the #password input
 function writePassword() {
-  // What is the difference between return and console log?
-  // What happens if we console log our password instead of returning it?
+  // What is the difference between return and console log? the return will let us return the data onto the web page. the console log will log the data in the console.
+  // What happens if we console log our password instead of returning it? The data won't display on the webpage if we console log it and not return it.
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -38,7 +40,7 @@ function generatePassword() {
     return "";
   }
 
-  // What are we doing here?
+  // What are we doing here? We are storing data for our for loop and if statements to grab/use/call.
   var useLowercase = confirm("Would you like to use lower case characters?");
   var useUppercase = confirm("Would you like to use upper case characters?");
   var useNumeric = confirm("Would you like to use numeric characters?");
